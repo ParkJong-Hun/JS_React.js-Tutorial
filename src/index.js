@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import HelloWorld from './practice/ch1/helloWorld';
+import PropsTutorial from './practice/ch1/props';
+import StateTutorial from './practice/ch1/state';
+import Component from './practice/ch2/component'
+import Effect from './practice/ch3/effect'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HelloWorld />
+    <PropsTutorial string="Hello World!"/>
+    <StateTutorial />
+    <Component comment="hi"/>
+    <Effect />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
